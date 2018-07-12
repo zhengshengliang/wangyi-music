@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after{box-sizing: border-box; }
+
+.page {
+    height: 100vh;
+    background: transparent url(http://p3.music.126.net/z4p2xss2a50qNHe6TLFdoA==/2425522650910827.jpg) no-repeat center;
+    background-size: cover;
+    display: flex; /* 很重要 */
+    flex-direction: column; /* 很重要 */
+}
+
+.song-player {
+    position: relative;
+}
+.song-player .pointer {
+    position: absolute;
+    left: 45vw;
+    width: 24vw;
+}
+.song-player .disk-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18vw;
+}
+.song-player .disk-container .icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.song-player .disk-container .icon-wrapper .icon {
+    fill: white;
+    width: 10vw;
+}
+
+.song-player .icon-play {
+    display: none;
+}
+.song-player .icon-pause {
+    display: block;
+}
+
+.song-player.playing .icon-pause{
+    display: none;
+}
+
+.song-player .disk-container .disk {
+    width: 72vw;
+}
+.song-player .disk-container .light {
+    width: 72vw;
+    position: absolute;
+}
+@keyframes circle{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.song-player .disk-container .album {
+    width: 44.5vw;
+    border-radius: 50%;
+    position: absolute;
+    animation: circle 20s infinite linear;
+    animation-play-state: paused;
+}
+
+.song-player.playing .disk-container .album {
+    animation-play-state: running;
+}
+
+.lyric {
+    text-align: center;
+    color: #AEABAC;
+    line-height: 2;
+    margin-top: 20px;
+}
+
+.lyric .song-name {
+    color: white;
+    font-size: 18px;
+}

@@ -90,3 +90,22 @@
     color: white;
     font-size: 18px;
 }
+
+.lyric .lyric-container {
+    height: 32vh;
+    overflow: hidden;
+}
+
+.lyric .song-lyric {
+    height: 72px;
+    /*overflow: hidden;*/
+}
+.lyric p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.lyric p.active {
+    color: white;
+}
+

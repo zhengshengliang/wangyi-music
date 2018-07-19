@@ -1,0 +1,25 @@
+{
+  "name": "163",
+  "version": "1.0.0",
+  "description": "",
+  "main": "song.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengshengliang/wangyi-music.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengshengliang/wangyi-music/issues"
+  },
+  "homepage": "https://github.com/zhengshengliang/wangyi-music#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "leancloud-storage": "^3.9.0",
+    "qiniu": "^7.2.1",
+    "qiniu-js": "^2.4.0"
+  }
+}
